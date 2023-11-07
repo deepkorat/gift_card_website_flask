@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+<div class="container">
+     <h2 class="pb-3">Buy gift card from various brands.</h2>
+     <div class="row row-cols-1 row-cols-md-3">
+          <!-- show gift card -->
+          {% for card in cards %}
+          <div class="col mb-4">
+               <div class="card">
+                    <img src="{{url_for('static', filename='img/'+card.brandname+'.jpg')}}" class="card-img-top"
+                         alt="brand image">
+                    <div class="card-body">
+                         <h4 class="card-title">{{card.title}}</h4>
+                         <h6>Price: {{card.price}}</h6>
+                    </div>
+                    <a href="{{url_for('main.card', card_id=card.id)}}" class="btn btn-outline-dark" style="background-color: greenyellow;">View</a>
+               </div>
+          </div>
+          {% endfor %}
+     </div>
+</div>
+
+{% endblock body %}

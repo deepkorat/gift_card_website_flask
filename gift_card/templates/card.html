@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!-- card details -->
+<div class="container mt-5">
+     <div class="row">
+          <div class="col-md-6">
+               <img src="{{url_for('static', filename='img/'+card.brandname+'.jpg')}}" style="width:500px;" alt="Card" class="product-image">
+          </div>
+          <div class="col-md-6 product-details">
+               <h2>{{card.title}}</h2>
+               <p>{{card.offer}}</p>
+               <h3>Price: {{card.price}}</h3>
+               <form action="{{ url_for('main.order') }}">
+                    <input type="hidden" id="card_id" name="card_id" value="{{ card.id }}">
+                    <input class="btn btn-outline-dark" style="background-color: greenyellow;" type="submit" value="Add to Basket">
+               </form>
+
+               <br><br>
+          </div>
+     </div>
+</div>
+{% endblock body %}

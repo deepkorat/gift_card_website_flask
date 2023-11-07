@@ -1,0 +1,114 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color: greenyellow;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the banner section */
+.banner {
+
+ text-align: center;
+ background-color: white;
+
+}
+
+.banner h2 {
+    font-size: 2rem;
+    color: #333;
+    font-style: italic;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Style the cars section */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: blanchedalmond;
+}
+
+.gift-card {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.gift-card img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us-content {
+
+    padding: 15%;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-size:xx-large
+
+}
+
+.buy-form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    block-size: auto;
+    background-color: blanchedalmond;
+}
+
+.input-field{
+    margin: 30px;
+}
+
+.submit{
+    color: blanchedalmond;
+    background-color: #ccc;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

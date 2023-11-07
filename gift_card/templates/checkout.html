@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container mt-5 mb-5">
+     <h2>Feelup the Details:</h2>
+     <br>
+     <form action="{{url_for('main.checkout')}}" method="post">
+          <div class="form-row ">
+               <div class="form-group col-md-6">
+                    <label>Name </label>
+                    <input type="text" class="form-control" id="name" name placeholder="ex. Mr.Example">
+               </div>
+          </div>
+          <div class="form-row ">
+               <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="ex. example@gmail.com">
+               </div>
+          </div>
+          <div class="form-row ">
+               <div class="form-group col-md-6">
+                    <label>Phone</label>
+                    <input type="phone" class="form-control" id="phone" name="phone" placeholder="297483131">
+               </div>
+          </div>
+          <button type="submit" class="btn btn-outline-dark"  style="background-color: greenyellow;">Confirm Order</button>
+     </form>
+</div>
+
+{% endblock body %}
